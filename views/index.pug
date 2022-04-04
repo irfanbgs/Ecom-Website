@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#{title}</title>
+    style
+        include ../static/style.css
+    <link rel="script" href="app.js">
+</head>
+
+<body>
+    <nav id="navbar">
+        <ul>
+            <img src="../static/logo.png" alt="">
+            <li><a href="/">Home</a> </li>
+            <li><a href="../static/shop.html">Shop</a></li>
+            <li><a href="../static/pages">Pages</a></li>
+            <li><a href="../static/contact.html">Contact</a></li>
+            <li><a href="../static/about.html">About</a></li>
+            <input type="text" name="Search" id="search-box" placeholder="Search">
+        </ul>
+
+    </nav>
+    <section>
+
+        <div class="container" id="login-social">
+            <a href="www.Facebook.com"><img src="../static/fb.png" alt=""></a>
+            <a href="www.Twitter.com"><img src="../static/twitter.png" alt=""></a>
+            <a href="www.Instagram.com"><img src="../static/instagram.png" alt=""></a>
+            <input type="button" value="Login">
+            <input type="button" value="Signup">
+        </div>
+    </section>
+    <section id="product-img">
+        <div class="p-img" id="box1"><a href="#"><img src="../static/biscuit/505010.jpg" alt=""></a></div>
+        <div class="p-img" id="box2"><a href="#"><img src="../static/biscuit/50505.jpg" alt=""></a></div>
+        <div class="p-img" id="box3"><a href="#"><img src="../static/biscuit/googly30.jpg" alt=""></a></div>
+        <div class="p-img" id="box4"><a href="#"><img src="../static/biscuit/googly5.jpg" alt=""></a></div>
+        <div class="p-img" id="box5"><a href="#"><img src="../static/biscuit/marie10.jpg" alt=""></a></div>
+        <div class="p-img" id="box6"><a href="#"><img src="../static/biscuit/marie32.jpg" alt=""></a></div>
+    </section>
+    <section id="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="/../static/Services/grocery.png" alt="">
+                <h2 class="h-secondary center">Grocery</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, cumque voluptatibus
+                    fuga consectetur fugit quaerat harum aperiam eaque veritatis iusto!.</p>
+            </div>
+            <div class="box">
+                <img src="/../static/Services/bulkorder.png" alt="">
+                <h2 class="h-secondary center">Bulk Ordering</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, cumque voluptatibus
+                    fuga consectetur fugit quaerat harum aperiam eaque veritatis iusto! .</p>
+            </div>
+            <div class="box">
+                <img src="/../static/Services/delivery.png" alt="">
+                <h2 class="h-secondary center">Grocery Delivery</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, cumque voluptatibus
+                    fuga consectetur fugit quaerat harum aperiam eaque veritatis iusto! </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="/" method ="POST" id="contact-form" >
+                <div class="form-group">
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+
+                </div>
+                <div class="form-group">
+                  <input type="text" name="email" id="email" placeholder="Enter your Email ID">
+
+                </div>
+                <div class="form-group">
+                    <input type="text" name="number" id="number" placeholder="Enter your mobile number">
+                </div>
+
+                <div class="form-group">
+                    <textarea name="address" id="address" cols="30" rows="5" placeholder="Enter your Address"></textarea>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Write about yourself"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+
+            </form>
+
+        </div>
+    </section>
+    <section class="footer center">
+        <footer>
+            Copyright &copy; 2022. All Rights Reserved Inc.
+        </footer>
+    </section>
+</body>
+
+</html>

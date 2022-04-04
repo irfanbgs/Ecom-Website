@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&family=Source+Sans+Pro:ital,wght@1,600&display=swap');
+
+/* Header */
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar{
+    /* display: flex; */
+    /* align-items: center; */
+    position: sticky;
+    top: 0px;
+    
+}
+ul {
+    display: flex;
+    /* background-color: antiquewhite; */
+    justify-content: center;
+    align-items: center;
+}
+ul img{
+    width: 40px;
+    height: 50px;
+    position: absolute;
+    left: 25px;
+}
+ul input{
+    position: absolute;
+    right: 60px;
+    height: 25px;
+    width: 195px;
+}
+
+ul li{
+    margin: 10px 15px;
+    list-style: none;
+    padding: 5px;
+    
+}
+ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 6px 8px;
+    font-family: 'Lato', sans-serif;
+}
+ul li a:hover{
+    background-color: tomato;
+    /* border:2px solid rgb(255, 254, 254); */
+    border-radius: 10px;
+}
+
+#login-social::before{
+        content: "";
+        background: url(../static/food.jpg) no-repeat center center/cover;
+        position: absolute;
+        top:0px;
+        left:0px;
+        height: 575px;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.8;
+}
+#login-social{
+    display: flex;
+    justify-content: right;
+}
+#login-social a{ 
+    margin: px 7px;
+    padding: 5px 7px;
+    list-style: none;
+    text-decoration: none;
+    /* background-color: rgb(0, 0, 0); */
+    /* border: 2px solid rgb(255, 255, 255); */
+    border-radius: 8px;
+    color: rgb(0, 0, 0);
+    
+}
+#login-social a img{ 
+   height: 25px;
+    width: 25px;
+}
+#login-social input{ 
+    height: 30px;
+    width: 90px;
+    padding: 5px;
+    margin: 5px 2px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    /* border: 2px solid rgb(255, 255, 255); */
+}
+#login-social input:hover{ 
+  cursor: pointer;
+  color: tomato;
+}
+#login-social a:hover{ 
+
+    color: tomato;
+    
+}
+
+/* Product Section */
+
+#product-img{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-img a img{
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    margin:5px;
+   
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+.p-img a img:hover{
+    transition-timing-function: ease-in-out;
+    transform: scale(1.1);
+}
+
+/* Services section */
+#services{
+    margin: 25px 52px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+        padding: 30px;
+    margin: 14px;
+    border-radius: 18px;
+    background-color: #fff0ff;
+}
+#services .box img{
+    height: 201px;
+    display: block;
+    margin: auto;
+
+}
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url(../static/form-bg.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    /* height: 344px; */
+    z-index: -1;
+    opacity:0.4 ;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+
+}
+#contact-box input,
+ #contact-box textarea{
+     width: 100%;
+     padding: 0.5rem;
+     border-radius: 5px;
+     font-size: 1.1rem;
+     margin: 7px 0px;
+     padding: 7px 5px;
+ }
+ #contact-box form{
+     width: 40%;
+ }
+ #contact-box label{
+    font-family: 'Bree Serif', serif;
+     font-size: 1.3rem;
+ }
+.form-group button{
+    text-align: center;
+    width: 100%;
+    background: grey;
+    color: white;
+    margin: 7px auto;
+    padding: 7px 7px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Footer Section */
+.footer{
+    background-color: black;
+    color: white;
+    padding: 5px 1px;
+
+}
+/* Utility Section */
+.h-primary{
+    font-size: 3rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+
+}
+.h-secondary{
+    font-size: 2rem;
+    padding: 12px;
+}
+.center{
+    text-align: center;
+}
